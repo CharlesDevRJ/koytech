@@ -97,7 +97,7 @@ Não há build step — abra direto no navegador:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/koytech.git
+git clone https://github.com/CharlesDevRJ/koytech.git
 cd koytech
 
 # Abra com Live Server (VS Code) ou qualquer servidor local
@@ -119,16 +119,6 @@ npx serve .
 | 5 | Processo | Timeline animada em 4 etapas |
 | 6 | CTA | Banner de conversão com orbs de gradiente |
 | 7 | Contato | Formulário funcional + links de redes sociais |
-
----
-
-## Destaques para Recrutadores
-
-- **Sem frameworks**: toda a lógica de animação, observer e DOM manipulation escrita à mão — demonstra domínio real de JavaScript e do browser rendering pipeline
-- **CSS sem pré-processador**: sistema de design completo usando apenas Custom Properties e cascata nativa
-- **Acessibilidade real**: não é só semântica básica — implementa padrões ARIA, focus management e live regions
-- **Back-end integrado**: PHP para envio de e-mail com sanitização e tratamento de erros
-- **Conformidade legal**: banner LGPD com lógica de consentimento persistido
 
 ---
 
