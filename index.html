@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koytech — Soluções Digitais Profissionais</title>
+  <meta name="description" content="Desenvolvimento de sistemas, landing pages, suporte técnico e certificado digital. Koytech: experiência e inovação para resultados digitais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Mulish:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── SKIP LINK (acessibilidade por teclado) ─────────────── -->
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ─── CURSOR ─────────────────────────────────────────────── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- ─── SCROLL PROGRESS ────────────────────────────────────── -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- ─── NAVBAR ─────────────────────────────────────────────── -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo" data-cursor="hover">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M4 14L14 4L24 14L14 24L4 14Z" stroke="#D4AF37" stroke-width="2" fill="none"/>
+            <path d="M9 14L14 9L19 14L14 19L9 14Z" fill="#D4AF37"/>
+          </svg>
+        </div>
+        <span class="logo-koy">Koy</span><span class="logo-tech">tech</span>
+      </a>
+
+      <nav class="navbar__links" id="nav-links">
+        <a href="#servicos" class="nav-link" data-cursor="hover">Serviços</a>
+        <a href="#sistemas" class="nav-link" data-cursor="hover">Sistemas</a>
+        <a href="#processo" class="nav-link" data-cursor="hover">Processo</a>
+        <a href="#contato" class="nav-link" data-cursor="hover">Contato</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#contato" class="btn btn--primary navbar__cta" data-cursor="hover">
+          <span>Fale conosco</span>
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+
+  <!-- ─── HERO ───────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="hero-canvas"></canvas>
+    <div class="hero__noise"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content" data-animate="fade-up">
+        <div class="hero__badge">
+          <div class="badge-dot"></div>
+          <span>Disponível para novos projetos</span>
+        </div>
+
+        <h1 class="hero__title">
+          Transformamos<br />
+          <span class="gradient-text" id="typewriter">ideias</span><br />
+          em realidade digital
+        </h1>
+
+        <p class="hero__subtitle">
+          Da concepção ao deploy — desenvolvemos sistemas, landing pages e oferecemos
+          suporte técnico especializado para impulsionar o seu negócio.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#sistemas" class="btn btn--primary btn--glow" data-cursor="hover">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            Ver nossos sistemas
+          </a>
+          <a href="#contato" class="btn btn--glass" data-cursor="hover">
+            Iniciar projeto
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="hero__stack">
+          <span class="stack-label">Tecnologias</span>
+          <div class="stack-pills">
+            <span class="pill">React</span>
+            <span class="pill">Next.js</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">Python</span>
+            <span class="pill">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-animate="fade-left">
+        <div class="code-window">
+          <div class="code-window__bar">
+            <div class="code-dot code-dot--red"></div>
+            <div class="code-dot code-dot--yellow"></div>
+            <div class="code-dot code-dot--green"></div>
+            <span class="code-filename">koytech.ts</span>
+          </div>
+          <div class="code-body">
+            <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">koytech</span> <span class="code-op">=</span> <span class="code-brace">{</span></div>
+            <div class="code-line code-indent"><span class="code-prop">sistemas</span><span class="code-op">:</span> <span class="code-string">"Full-Stack"</span><span class="code-op">,</span></div>
+            <div class="code-line code-indent"><span class="code-prop">landing</span><span class="code-op">:</span> <span class="code-string">"Alta Conversão"</span><span class="code-op">,</span></div>
+            <div class="code-line code-indent"><span class="code-prop">suporte</span><span class="code-op">:</span> <span class="code-string">"24h"</span><span class="code-op">,</span></div>
+            <div class="code-line code-indent"><span class="code-prop">qualidade</span><span class="code-op">:</span> <span class="code-num">100</span><span class="code-op">,</span></div>
+            <div class="code-line"><span class="code-brace">}</span></div>
+            <div class="code-line">&nbsp;</div>
+            <div class="code-line"><span class="code-keyword">export default</span> <span class="code-fn">deliver</span><span class="code-brace">(</span><span class="code-var">koytech</span><span class="code-brace">)</span></div>
+            <div class="code-cursor-blink">|</div>
+          </div>
+        </div>
+
+        <div class="hero__floating-cards">
+          <div class="float-card float-card--1" data-animate="fade-up" data-delay="200">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="2" stroke-linecap="round" d="M5 13l4 4L19 7"/></svg>
+            <span>Deploy realizado</span>
+          </div>
+          <div class="float-card float-card--2" data-animate="fade-up" data-delay="400">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" stroke-width="2"/><path stroke="#D4AF37" stroke-width="2" stroke-linecap="round" d="M12 6v6l4 2"/></svg>
+            <span>+50 projetos</span>
+          </div>
+          <div class="float-card float-card--3" data-animate="fade-up" data-delay="300">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span>Alta performance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Role para baixo</span>
+    </div>
+  </section>
+
+  <!-- ─── STATS ──────────────────────────────────────────────── -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat-item" data-animate="fade-up">
+        <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Projetos entregues</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-animate="fade-up" data-delay="100">
+        <span class="stat-number" data-count="98">0</span><span class="stat-plus">%</span>
+        <span class="stat-label">Clientes satisfeitos</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-animate="fade-up" data-delay="200">
+        <span class="stat-number" data-count="5">0</span><span class="stat-plus">★</span>
+        <span class="stat-label">Avaliação média</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-animate="fade-up" data-delay="300">
+        <span class="stat-number" data-count="24">0</span><span class="stat-plus">h</span>
+        <span class="stat-label">Tempo de resposta</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DESTAQUE: DESENVOLVIMENTO DE SISTEMAS ──────────────── -->
+  <section class="sistemas" id="sistemas">
+    <div class="sistemas__bg-glow"></div>
+    <div class="container">
+
+      <div class="section-header" data-animate="fade-up">
+        <span class="badge badge--gold">
+          <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          Serviço em destaque
+        </span>
+        <h2 class="section-title">Desenvolvimento de<br /><span class="gradient-text">Sistemas Completos</span></h2>
+        <p class="section-subtitle">Criamos sistemas web e mobile sob medida — desde ERPs e CRMs até plataformas SaaS escaláveis, com arquitetura moderna e código de qualidade.</p>
+      </div>
+
+      <div class="sistemas__content">
+        <div class="sistemas__features" data-animate="fade-up">
+          <div class="sys-feature">
+            <div class="sys-feature__icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#D4AF37" stroke-width="1.8"/><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" d="M8 12h8M8 8h5M8 16h3"/></svg>
+            </div>
+            <div>
+              <h4>Sistemas ERP & CRM</h4>
+              <p>Gestão completa de empresas, clientes e processos em uma plataforma centralizada.</p>
+            </div>
+          </div>
+          <div class="sys-feature">
+            <div class="sys-feature__icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <h4>Apps Web & Mobile</h4>
+              <p>Aplicações responsivas e nativas com experiência fluida em qualquer dispositivo.</p>
+            </div>
+          </div>
+          <div class="sys-feature">
+            <div class="sys-feature__icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+            </div>
+            <div>
+              <h4>Plataformas SaaS</h4>
+              <p>Sistemas multi-tenant escaláveis com autenticação, billing e painel administrativo.</p>
+            </div>
+          </div>
+          <div class="sys-feature">
+            <div class="sys-feature__icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <h4>APIs & Integrações</h4>
+              <p>REST APIs robustas e integração com serviços de terceiros, pagamentos e automações.</p>
+            </div>
+          </div>
+          <div class="sys-feature">
+            <div class="sys-feature__icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <div>
+              <h4>Dashboards & Analytics</h4>
+              <p>Painéis com visualização de dados em tempo real para decisões estratégicas.</p>
+            </div>
+          </div>
+          <div class="sys-feature">
+            <div class="sys-feature__icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <div>
+              <h4>Segurança & Escalabilidade</h4>
+              <p>Código seguro, autenticação robusta e arquitetura preparada para crescer.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sistemas__showcase" data-animate="fade-left">
+          <div class="showcase-window">
+            <div class="showcase-window__bar">
+              <div class="sw-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="sw-url">
+                <svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="#9A9BA0" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                sistema.koytech.com.br
+              </div>
+            </div>
+            <div class="showcase-content">
+              <div class="sc-sidebar">
+                <div class="sc-nav-item sc-nav-item--active">
+                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                  Dashboard
+                </div>
+                <div class="sc-nav-item">
+                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  Clientes
+                </div>
+                <div class="sc-nav-item">
+                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                  Relatórios
+                </div>
+                <div class="sc-nav-item">
+                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                  Config
+                </div>
+              </div>
+              <div class="sc-main">
+                <div class="sc-kpi-row">
+                  <div class="sc-kpi">
+                    <span class="sc-kpi-label">Receita</span>
+                    <span class="sc-kpi-val">R$48.2k</span>
+                    <span class="sc-kpi-up">+12%</span>
+                  </div>
+                  <div class="sc-kpi">
+                    <span class="sc-kpi-label">Clientes</span>
+                    <span class="sc-kpi-val">1.284</span>
+                    <span class="sc-kpi-up">+8%</span>
+                  </div>
+                  <div class="sc-kpi">
+                    <span class="sc-kpi-label">Pedidos</span>
+                    <span class="sc-kpi-val">342</span>
+                    <span class="sc-kpi-up">+5%</span>
+                  </div>
+                </div>
+                <div class="sc-chart">
+                  <div class="sc-chart-bars">
+                    <div class="sc-bar" style="--h:45%"></div>
+                    <div class="sc-bar" style="--h:65%"></div>
+                    <div class="sc-bar" style="--h:52%"></div>
+                    <div class="sc-bar" style="--h:80%"></div>
+                    <div class="sc-bar" style="--h:60%"></div>
+                    <div class="sc-bar sc-bar--active" style="--h:95%"></div>
+                    <div class="sc-bar" style="--h:70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sistemas__cta-box">
+            <p>Tem uma ideia de sistema?</p>
+            <a href="#contato" class="btn btn--primary btn--glow" data-cursor="hover">
+              Solicitar proposta grátis
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVIÇOS ───────────────────────────────────────────── -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="badge">Todos os serviços</span>
+        <h2 class="section-title">Tudo que você precisa<br /><span class="gradient-text">em um só lugar</span></h2>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card tilt-card" data-animate="fade-up" data-delay="0">
+          <div class="service-card__glow"></div>
+          <div class="service-card__icon">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <h3>Desenvolvimento de Sistemas</h3>
+          <p>Sistemas web completos, APIs, SaaS e aplicações sob medida com tecnologias modernas.</p>
+          <div class="service-card__tags">
+            <span>React</span><span>Node.js</span><span>Full-Stack</span>
+          </div>
+          <a href="#sistemas" class="service-card__link" data-cursor="hover">
+            Ver detalhes <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card tilt-card" data-animate="fade-up" data-delay="100">
+          <div class="service-card__glow"></div>
+          <div class="service-card__icon">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>Landing Pages & Sites</h3>
+          <p>Sites e páginas profissionais otimizados para conversão com design moderno e responsivo.</p>
+          <div class="service-card__tags">
+            <span>Design</span><span>CRO</span><span>SEO</span>
+          </div>
+          <a href="#contato" class="service-card__link" data-cursor="hover">
+            Solicitar orçamento <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card tilt-card" data-animate="fade-up" data-delay="200">
+          <div class="service-card__glow"></div>
+          <div class="service-card__icon">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3>Suporte Técnico</h3>
+          <p>Assistência especializada para computadores Windows e macOS. Diagnóstico rápido e eficiente.</p>
+          <div class="service-card__tags">
+            <span>Windows</span><span>macOS</span><span>Hardware</span>
+          </div>
+          <a href="#contato" class="service-card__link" data-cursor="hover">
+            Agendar suporte <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card tilt-card" data-animate="fade-up" data-delay="300">
+          <div class="service-card__glow"></div>
+          <div class="service-card__icon">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3>Automação & Inteligência Artificial</h3>
+          <p>Automatize processos repetitivos e integre IA ao seu negócio para ganhar escala, velocidade e eficiência.</p>
+          <div class="service-card__tags">
+            <span>IA</span><span>Automação</span><span>Chatbots</span>
+          </div>
+          <a href="#contato" class="service-card__link" data-cursor="hover">
+            Saber mais <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROCESSO ───────────────────────────────────────────── -->
+  <section class="process" id="processo">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="badge">Como trabalhamos</span>
+        <h2 class="section-title">Do briefing ao<br /><span class="gradient-text">resultado final</span></h2>
+      </div>
+
+      <div class="process__timeline">
+        <div class="timeline-line" id="timeline-line"></div>
+
+        <div class="process-step" data-animate="fade-up" data-delay="0">
+          <div class="process-step__num">01</div>
+          <div class="process-step__card">
+            <div class="process-step__icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <h3>Briefing</h3>
+            <p>Entendemos seu negócio, objetivos e público-alvo para traçar a estratégia perfeita.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-animate="fade-up" data-delay="100">
+          <div class="process-step__num">02</div>
+          <div class="process-step__card">
+            <div class="process-step__icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+            </div>
+            <h3>Design & Prototipação</h3>
+            <p>Criamos wireframes e protótipos interativos para validar a experiência antes do código.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-animate="fade-up" data-delay="200">
+          <div class="process-step__num">03</div>
+          <div class="process-step__card">
+            <div class="process-step__icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <h3>Desenvolvimento</h3>
+            <p>Implementamos com código limpo, testes e boas práticas para garantir qualidade e escalabilidade.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-animate="fade-up" data-delay="300">
+          <div class="process-step__num">04</div>
+          <div class="process-step__card">
+            <div class="process-step__icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </div>
+            <h3>Entrega & Suporte</h3>
+            <p>Lançamos o projeto e permanecemos ao seu lado com manutenção e melhorias contínuas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ────────────────────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="cta-section__bg"></div>
+    <div class="container cta-section__inner" data-animate="fade-up">
+      <div class="cta-section__orb cta-section__orb--1"></div>
+      <div class="cta-section__orb cta-section__orb--2"></div>
+      <span class="badge badge--dark">Pronto para começar?</span>
+      <h2>Vamos transformar sua<br /><span class="gradient-text">ideia em produto</span></h2>
+      <p>Conte-nos sobre o seu projeto e receba uma proposta personalizada sem compromisso.</p>
+      <div class="cta-section__actions">
+        <a href="#contato" class="btn btn--primary btn--lg btn--glow" data-cursor="hover">Iniciar meu projeto</a>
+        <a href="https://wa.me/5521986681895" target="_blank" class="btn btn--glass btn--lg" data-cursor="hover">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTATO ────────────────────────────────────────────── -->
+  <section class="contact" id="contato">
+    <div class="container contact__inner">
+
+      <div class="contact__info" data-animate="fade-up">
+        <span class="badge">Contato</span>
+        <h2 class="section-title">Vamos conversar<br /><span class="gradient-text">sobre seu projeto</span></h2>
+        <p class="contact__desc">Respondemos em até 24 horas. Conta pra gente o que você precisa e vamos montar a melhor solução para você.</p>
+
+        <div class="contact__items">
+          <a href="https://instagram.com/koytechoficial" target="_blank" rel="noopener" class="contact-item" data-cursor="hover">
+            <div class="contact-item__icon">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#D4AF37" stroke-width="1.8"/><path stroke="#D4AF37" stroke-width="1.8" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <span class="contact-item__label">Instagram</span>
+              <span class="contact-item__val">@koytechoficial</span>
+            </div>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="contact-item" data-cursor="hover">
+            <div class="contact-item__icon">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </div>
+            <div>
+              <span class="contact-item__label">Facebook</span>
+              <span class="contact-item__val">/koytech</span>
+            </div>
+          </a>
+          <a href="https://wa.me/5521986681895" target="_blank" rel="noopener" class="contact-item" data-cursor="hover">
+            <div class="contact-item__icon">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path fill="#D4AF37" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <span class="contact-item__label">WhatsApp</span>
+              <span class="contact-item__val">Chamar no WhatsApp</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__form-wrap" data-animate="fade-left">
+        <form class="contact-form" id="contact-form" data-endpoint="mail.php" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome completo" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Serviço de interesse</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Selecione um serviço</option>
+              <option value="sistemas">Desenvolvimento de Sistemas</option>
+              <option value="landing-page">Landing Page & Site</option>
+              <option value="suporte">Suporte Técnico</option>
+              <option value="automacao">Automação & Inteligência Artificial</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Conte sobre seu projeto ou necessidade..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full btn--glow" id="submit-btn" data-cursor="hover">
+            <span class="btn-text">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+              Enviar mensagem
+            </span>
+            <span class="btn-loading" hidden>
+              <span class="spinner"></span> Enviando...
+            </span>
+          </button>
+          <p class="form-lgpd">
+            Ao enviar, você concorda que seus dados (nome e e-mail) sejam usados exclusivamente para responder ao seu contato, conforme a <abbr title="Lei Geral de Proteção de Dados">LGPD</abbr> (Lei 13.709/2018). Nenhum dado é compartilhado com terceiros.
+          </p>
+          <p class="form-error" id="form-error" role="alert" aria-live="assertive" hidden></p>
+          <p class="form-success" id="form-success" role="status" aria-live="polite" hidden>
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            Mensagem enviada! Entraremos em contato em breve.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  </main><!-- fim #conteudo-principal -->
+
+  <!-- ─── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="navbar__logo">
+          <div class="logo-icon">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
+              <path d="M4 14L14 4L24 14L14 24L4 14Z" stroke="#D4AF37" stroke-width="2" fill="none"/>
+              <path d="M9 14L14 9L19 14L14 19L9 14Z" fill="#D4AF37"/>
+            </svg>
+          </div>
+          <span class="logo-koy">Koy</span><span class="logo-tech">tech</span>
+        </a>
+        <p>Experiência e inovação para<br />resultados digitais reais.</p>
+        <div class="footer__social">
+          <a href="https://instagram.com/koytechoficial" target="_blank" rel="noopener" aria-label="Instagram" data-cursor="hover">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/><path stroke="currentColor" stroke-width="1.8" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" data-cursor="hover">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://wa.me/5521986681895" target="_blank" rel="noopener" aria-label="WhatsApp" data-cursor="hover">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__nav">
+        <div class="footer__nav-col">
+          <h5>Serviços</h5>
+          <a href="#sistemas">Desenvolvimento de Sistemas</a>
+          <a href="#servicos">Landing Pages & Sites</a>
+          <a href="#servicos">Suporte Técnico</a>
+          <a href="#servicos">Automação & IA</a>
+        </div>
+        <div class="footer__nav-col">
+          <h5>Empresa</h5>
+          <a href="#processo">Como trabalhamos</a>
+          <a href="#contato">Contato</a>
+          <a href="#contato">Solicitar orçamento</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2025 Koytech. Todos os direitos reservados.</p>
+        <p>Feito com <span class="heart">♥</span> em Brasil</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── LGPD — AVISO DE COOKIES ──────────────────────────── -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="false" aria-labelledby="cookie-title" hidden>
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <p class="cookie-banner__title">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          <strong id="cookie-title">Privacidade e Cookies</strong>
+        </p>
+        <p>Este site utiliza cookies essenciais e carrega recursos externos (Google Fonts). Ao continuar navegando, você concorda com o uso desses dados conforme a <abbr title="Lei Geral de Proteção de Dados">LGPD</abbr> (Lei 13.709/2018).</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--glass btn--sm" id="cookie-decline">Somente essenciais</button>
+        <button class="btn btn--primary btn--sm" id="cookie-accept">Aceitar tudo</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
